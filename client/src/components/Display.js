@@ -3,7 +3,7 @@ import useDarkMode from '../hooks/useDarkMode'
 import User from './User'
 const Display = (props) => {
     const [darkMode, setDarkMode] = useDarkMode();
-
+    
     const toggleDarkMode = e => {
         e.preventDefault();
         setDarkMode(!darkMode)

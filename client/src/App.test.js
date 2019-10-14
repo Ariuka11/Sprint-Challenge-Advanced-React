@@ -10,3 +10,8 @@ test('Render the heading', () => {
   const element = wrapper.getByText('American Female Soccer Players')
   expect(element).toBeVisible()
 })
+test('Render the players', () => {
+  const wrapper = ReactDOM.render(<App />);
+  const players = wrapper.getByTestId(/user/i);
+  expect(players).toBeVisible()
+})

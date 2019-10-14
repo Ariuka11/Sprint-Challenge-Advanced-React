@@ -28,7 +28,7 @@ class App extends React.Component{
   render(){
     return (
       <div>
-        <h1>American Female Soccer Players</h1>
+        <h1>World Female Soccer Players</h1>
         <Display users = {this.state.users} />
       </div>
     )
